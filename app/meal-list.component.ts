@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Meal } from './meal.model';
 
 @Component({
@@ -8,7 +8,7 @@ import { Meal } from './meal.model';
     <h3>Meal List</h3>
       <div>
         <label>Calorie Filter:</label>
-        <select class="form-control">
+        <select (change)="onCalories($event.target.value)" class="filter form-control">
           <option>500 or less</option>
           <option>500 or greater</option>
         </select>
@@ -16,11 +16,16 @@ import { Meal } from './meal.model';
       <div *ngFor="let currentMeal of childMealList">
         <meal-display [meal]="currentMeal"
         ></meal-display>
+        <button (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
       </div>
     </div>
   `
 })
 
 export class MealListComponent {
-    @Input() childMealList: Meal[];
+  @Input() childMealList: Meal[];
+  @Output() clickSender = new EventEmitter();
+  editButtonHasBeenClicked(mealToEdit: Meal) {
+    this.clickSender.emit(mealToEdit);
+  }
 }
