@@ -8,10 +8,10 @@ import { Meal } from './meal.model';
     <h3>Meal List</h3>
       <div>
         <label>Calorie Filter:</label>
-        <select (change)="onCalories($event.target.value)" class="filter form-control">
+        <select (change)="onCalories($event.target.value)" class="filter">
           <option value="all" selected="selected">All</option>
-          <option value="<500">500 or less</option>
-          <option value=">500">500 or greater</option>
+          <option value="<500">Lower Calorie Meals</option>
+          <option value=">500">Higher Calorie Meals</option>
         </select>
       </div>
       <div *ngFor="let currentMeal of childMealList | calories:selectedCaloriesView">

@@ -1,6 +1,29 @@
+$white: #FFFFFA;
+$grey: #808D8E;
+$green: #22CB8C;
+
 body {
+  background-image: url("../../resources/img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #2A9D8F;
+  font-family: "Optima", "Courier", sans-serif;
+  color: $white;
+  #header {
+    background-color: grey;
+    text-align: center;
+    background: rgba($green, .4);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
 }
+
+
+
+// .meal-display {
+//
+// }
 
 #button {
   margin-top: 20px;

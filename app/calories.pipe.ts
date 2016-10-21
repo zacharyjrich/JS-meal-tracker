@@ -3,14 +3,14 @@ import {Meal} from './meal.model';
 
 @Pipe({
   name: "calories",
-  pure: true //stateful. true = stateless.
+  pure: false //stateful. true = stateless.
 })
 export class CaloriesPipe implements PipeTransform {
   transform(input: Meal[], desiredCalorieView){
     var output: Meal[] = [];
     if (desiredCalorieView === "<500") {
       for (var i = 0; i < input.length; i++) {
-        if (input[i].calories <= 500) {
+        if (input[i].calories <= 499) {
           output.push(input[i]);
         }
       }

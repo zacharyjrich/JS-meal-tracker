@@ -6,8 +6,10 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'my-app',
   template: `
+  <div class="container-fluid" id="header">
+    <h1>Track Them Meals!</h1>
+  </div>
   <div class="container text-center">
-    <h1>Meal Tracker</h1>
     <div class="col-md-3 col-md-offset-2">
       <new-meal
       (newMealSender)="addMeal($event)"
