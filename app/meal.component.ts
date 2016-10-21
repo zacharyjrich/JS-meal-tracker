@@ -5,7 +5,10 @@ import { Meal } from './meal.model';
   selector: 'meal-display',
   template: `
     <div>
-    <p>{{ meal.name }} {{ meal.calories }} {{ meal.details }}</p>
+      <h4>Meal</h4>
+      <p>Name: {{ meal.name }}</p>
+      <p>Calories: {{ meal.calories }}</p>
+      <p>Details: {{ meal.details }}</p>
     </div>
   `
 })
