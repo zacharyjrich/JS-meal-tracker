@@ -4,7 +4,7 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'meal-display',
   template: `
-    <div>
+    <div class="meal-display">
       <h4>Meal</h4>
       <p>Name: {{ meal.name }}</p>
       <p>Calories: {{ meal.calories }}</p>
