@@ -9,21 +9,24 @@ body {
   background-color: #2A9D8F;
   font-family: "Optima", "Courier", sans-serif;
   color: $white;
-  #header {
-    background-color: grey;
-    text-align: center;
-    background: rgba($green, .4);
-    padding-top: 10px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-  }
 }
 
+#header {
+  background-color: grey;
+  text-align: center;
+  background: rgba($green, .4);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
 
+.meal-display {
+  text-align: left;
+}
 
-// .meal-display {
-//
-// }
+.form-control {
+  margin-bottom: 5px;
+}
 
 #button {
   margin-top: 20px;
