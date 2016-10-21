@@ -20,11 +20,11 @@ This project will create a meal tracking application. Users should be able to lo
 
 ## Setup/Installation Requirements
 
-* Clone this repository https://github.com/zacharyjrich/JS-meal-tracker
-* Make sure to change directory with $ cd JS-meal-tracker
-* Run $ npm install
-* Run $ bower install
-* Run $ gulp serve
+1) Clone this repository https://github.com/zacharyjrich/JS-meal-tracker
+2) Make sure to change directory with $ cd JS-meal-tracker
+3) Run $ npm install
+4) Run $ bower install
+5) Run $ gulp serve
 
 ## Known Bugs
 
